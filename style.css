@@ -1,0 +1,498 @@
+:root{
+    --ColorPrimary:#070707 ;
+    --ColorSecondary:#0a0a0a ;
+    --ColorThirdary:#161616 ;
+    --ColorOutline:#1c1c1c ;
+    --ColorText:#f7f7f7 ;
+    --ColorBlue:#3464f0 ;
+    --ColorSecondaryText:#b5b5b5  ;
+}
+body{
+    background-color: var(--ColorPrimary);
+    font-family: "Kanit";
+}
+.Home{
+    display: flex;
+    outline: 1px solid var(--ColorOutline);
+    border-radius: 15px;
+    background-image: url(midfr.png);
+    width: 1358px;
+    height: 655px;
+    font-family: "Kanit";
+    background-size: cover;
+}
+hr{
+    color: var(--ColorOutline);
+    width: 1250px;
+    height: 0px;
+    position: absolute;
+    top: 90px;
+    left: 65px;
+    border-color: var(--ColorOutline);
+}
+.Home h1{
+    position: absolute;
+    font-size: 23px;
+    left: 65px;
+    top: 22px;
+    font-family: "Kanit";
+    color: var(--ColorBlue);
+}
+.Home h2{
+    font-family: "Kanit";
+    position: relative;
+    top: 150px;
+    right: 900px;
+    font-size: 50px;
+    height: 20px;
+    color: var(--ColorBlue);
+}
+.Home h3{
+    font-family: "Kanit";
+    position: relative;
+    color: var(--ColorText);
+    top: 230px;
+    font-weight: 400;
+    right: 1093px;
+    font-size: 30px;
+    height: 20px;
+}
+.Home li{
+    position: absolute;
+    top: 28px;
+    left: 1060px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 100px;
+    color: var(--ColorText);
+}
+a{
+    text-decoration: none;
+    font-family: "Kanit";
+    color: var(--ColorText);
+    position: relative;
+    z-index: 1;
+}
+a::before{
+    content: "";
+    z-index: 0;
+    width: 0px;
+    height: 2px;
+    position: absolute;
+    bottom: -2px;
+    transition: 0.5s ease all;
+    background-color: var(--ColorBlue);
+}
+a:hover::before{
+    cursor: pointer;
+    width: 100%;
+}
+.buttons{
+    position: relative;
+    top: 400px;
+    left: 152px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 200px;
+    height: 50px;
+    gap: 20px;
+}
+.buttons button{
+    border-radius: 10px;
+    position: relative;
+    border: none;
+    outline: 1px solid var(--ColorOutline);
+    background: var(--ColorSecondary);
+    width: 145px;
+    height: 50px;
+    color: var(--ColorBlue);
+    font-family: "Kanit";
+    overflow: hidden;
+    z-index: 1;
+    cursor: pointer;
+    transition: 0.2s ease;
+    outline-offset: -1px;
+}
+
+.buttons button:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 0px hsl(225, 86%, 57%, 0.4);
+}
+
+/* second */
+.second h2{
+    font-size: 50px;
+    color: var(--ColorBlue);
+    position: relative;
+    left: 57px;
+    top: 80px;
+    width: 600px;
+}
+.second h3{
+    color: var(--ColorText);
+    font-size: 16px;
+    position: relative;
+    top: 20px;
+    width: 600px;
+    height: 60px;
+    left: 59px;
+    font-weight: 400;
+}
+.tables1{
+    background-color: var(--ColorSecondary);
+    width: 400px;
+    height: 180px;
+    border-radius: 10px;
+    outline: 0.5px solid var(--ColorOutline);
+    
+}
+.tables1 h1 {
+    color: var(--ColorBlue);
+    position: relative;
+    left: 80px;
+    bottom: 57px;
+    font-size: 30px;
+}
+.tables1 h3{
+    position: relative;
+    top:-60px;
+    left: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    width: 370px;
+
+}
+.tables1 hr{
+    width: 90%; /* Adjust to fit within container */
+    border: 1px solid var(--ColorOutline);
+    margin: 20px auto; /* Center within container */
+    display: block; /* Ensure visibility */
+    position: relative;
+    top: -60px;
+    left: -0px;
+}
+.dumbIcon{
+    background-color: var(--ColorThirdary);
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+.custom-icon{
+    position: relative;
+    left: 11px;
+    top: 12px;
+    color: var(--ColorBlue);
+    
+    /* Flexbox to center the icon inside the box */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-size: 24px; /* Adjust the icon size if needed */
+}
+.custom-icon2{
+    position: relative;
+    left: 13px;
+    top: 13px;
+    color: var(--ColorBlue);
+    
+    /* Flexbox to center the icon inside the box */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-size: 24px; /* Adjust the icon size if needed */
+}
+/* Gridner */
+.Gridner{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 1px;
+    gap: 10px;
+    position: relative;
+    right: -60px;
+    top: 80px;
+}
+.third h1{
+    color: var(--ColorBlue);
+    position: relative;
+    top: 100px;
+    font-size: 40px;
+    left: 57px;
+    width: 600px;
+}
+.third h3{
+    color: var(--ColorText);
+    font-weight: 400;
+    font-size: 16px;
+    position: relative;
+    top: 60px;
+    width: 600px;
+    left: 63px;
+    margin-top: 20px;
+}
+.third button{
+    background-color: var(--ColorSecondary);
+    outline: 1px solid var(--ColorThirdary);
+    border: none;
+    font-family: "Kanit";
+    border-radius: 10px;
+    color: var(--ColorBlue);
+    width: 150px;
+    height: 40px;
+    position: relative;
+    top: 50px;
+    left: 60px;
+    margin-right: 10px;
+    transition: 0.2s ease;
+}
+.third button:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 0px hsl(225, 86%, 57%, 0.4);
+    
+}
+.factsholder{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    font-size: 14px;
+    width: 800px;
+    gap: 10px;
+    position: relative;
+    top: 80px;
+    left: 57px;
+}
+.facts h2{
+    color: var(--ColorText);
+    font-weight: 400;
+    font-size: 16px;
+    position: absolute;
+}
+.facts{
+    background-color: var(--ColorSecondary);
+    outline: 1px solid var(--ColorOutline);
+    height: 70px;
+    width: 400px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.icon-are-cool{
+    color: var(--ColorBlue);
+    position: relative;
+    font-size: 20px;
+    position: relative;
+    top: 14px;
+    left: 16px;
+}
+.backgroundfr{
+    width: 50px;
+    height: 50px;
+    background-color: var(--ColorThirdary);
+    border-radius: 10px;
+    position: relative;
+    right: 160px;
+}
+h1{
+    color: var(--ColorPrimary);
+}
+
+/* four lolololol */
+
+#bruh{
+    font-size: 40px;
+    color: var(--ColorBlue);
+    position: relative;
+    left: 552px;
+    width: 600px;
+    top: 80px;
+}
+
+#bruh2{
+    font-size: 16px;
+    color: var(--ColorText);
+    font-weight: 400;
+    position: relative;
+    left: 552px;
+}
+
+.four button{
+    position: relative;
+    left: 552px;
+    top: 60px ;
+}
+
+.cardsholder{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    width: 595px;
+    position: relative;
+    top: 130px;
+    left: 550px;
+}
+.cards{
+
+    background-color: var(--ColorSecondary);
+    width: 350px;
+    border-radius: 10px;
+    outline: 1px solid var(--ColorThirdary);
+    color: var(--ColorBlue);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+.cards h2{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--ColorText);
+}
+.icon-are-cool1{
+    position: relative;
+    top: 13px;
+    left: 16px;
+    font-size: 20px;
+}
+.iconholderbackgroundfrfr{
+    background-color: var(--ColorThirdary);
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    border-radius: 10px;
+}
+
+.fifth h2{
+    color: var(--ColorBlue);
+    font-size: 40px;
+    position: relative;
+    top: 250px;
+    left: 50px;
+    width: 400px;
+}
+
+.fifth h3{
+    color: var(--ColorText);
+    font-size: 16px;
+    font-weight: 400;
+    position: relative;
+    left: 53px;
+    top: 220px;
+    width: 400px;
+}
+.heading h2{
+    font-size: 40px;
+    color: var(--ColorBlue);
+}
+.heading h3{
+    color: var(--ColorText);
+    font-size: 18px;
+    font-weight: 400;
+}
+.heading{
+    position: relative;
+    left: 100px;
+    top: 300px;
+    width: 600px;
+}
+.superpackagessholder{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    position: relative;
+    left: 65px;
+    width: 10px;
+    gap: 10px;
+}
+.packages{
+    background-color: var(--ColorSecondary);
+    border-radius: 15px;
+    outline: 1px solid var(--ColorOutline);
+    width: 335px;
+    position: relative;
+    top: 300px;
+    left: 100px;
+}
+.packages h1{
+    font-size: 30px;
+    color: var(--ColorBlue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.packages h2{
+    color: var(--ColorSecondaryText);
+    font-size: 16px;
+    font-weight: 400;
+    position: relative;
+    top: 0px;
+    left: 8px;
+}
+.packages h3{
+    color: var(--ColorText);
+    font-size: 25px;
+    position: relative;
+    top: 0px;
+    left: 120px;
+    width: 100px;
+}
+.packages span{
+    color: var(--ColorSecondaryText);
+    font-size: 16px;
+}
+.packages h4{
+    font-size: 16px;
+    color: var(--ColorText);
+    font-weight: 400;
+    position: relative;
+    left: 50px;
+}
+.packages h5{
+    color: var(--ColorSecondaryText);
+    font-size: 16px;
+    font-weight: 400;
+    position: relative;
+    left: 50px;
+    text-decoration: line-through;
+}
+.packages button{
+    border-radius: 15px;
+    position: relative;
+    border: none;
+    outline: 1px solid var(--ColorOutline);
+    background: var(--ColorSecondary);
+    width: 175px;
+    height: 40px;
+    color: var(--ColorBlue);
+    font-family: "Kanit";
+    overflow: hidden;
+    z-index: 1;
+    cursor: pointer;
+    transition: 0.2s ease;
+    outline-offset: -1px;
+    left: 75px;
+    top: -10px;
+}
+
+.packages button:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 0px hsl(225, 86%, 57%, 0.4);
+}
+
+.supericon{
+    position: relative;
+    left: 20px;
+    top: 45px;
+    font-size: 20px;
+    color: var(--ColorBlue);
+}
+#brotha{
+    color: var(--ColorPrimary);
+    position: relative;
+    top: 400px;
+}
